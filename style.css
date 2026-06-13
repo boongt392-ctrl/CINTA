@@ -1,0 +1,132 @@
+\* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #dff1ff, #b8ddff, #82bfff);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hati kecil */
+body::before {
+  content: "💙 💙 💙 💙 💙";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+body::after {
+  content: "💙 💙 💙 💙";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+.card {
+  width: 380px;
+  min-height: 520px;
+  background: white;
+  border-radius: 30px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  animation: show 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1976ff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #1976ff;
+  margin-top: 15px;
+}
+
+p {
+  color: #444;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 4px solid #cfe5ff;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.yes,
+.no {
+  width: 140px;
+  height: 58px;
+  border: none;
+  border-radius: 999px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 140px;
+  border: 2px solid #b9d9ff;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #1976ff;
+}
+
+.chibi {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}

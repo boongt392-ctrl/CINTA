@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untuk Kamu 💙</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Halaman 1 -->
+    <div id="page1" class="card">
+      <h1>💙</h1>
+      <h2>Mau Jadi Pacarku?</h2>
+
+      <div class="btn-group">
+        <button class="yes" onclick="page2()">Yes 💙</button>
+        <button class="no" id="noBtn">No 😢</button>
+      </div>
+    </div>
+
+    <div id="page2" class="card hidden">
+      <img src="badminton.png" alt="Badminton Player" class="chibi" />
+
+      <h1>Say Yes 💙</h1>
+
+      <button class="yes" onclick="page3()">Yes 💙</button>
+    </div>
+    <!-- Halaman 3 -->
+    <div id="page3" class="card hidden">
+      <h2>💌 Kenapa Kamu Mau Jadi Pacarku?Harus Jujur ya</h2>
+
+      <textarea
+        id="reason"
+        rows="6"
+        placeholder="Tulis alasan kamu di sini..."
+      ></textarea>
+
+      <br /><br />
+
+      <button class="yes" onclick="sendReason()">Kirim 💙</button>
+    </div>
+
+    <!-- Halaman 4 -->
+    <div id="page4" class="card hidden">
+      <h1>🎉 YAAAY!!! 🎉</h1>
+
+      <h2>Terima Kasih 💙</h2>
+
+      <p>Terima kasih sudah mau jadi pacarku.</p>
+
+      <p>Semoga kita selalu bahagia bersama 💙</p>
+
+      <h3>I Love You 💙</h3>
+
+      <h3>MAAF YA HARI INI ATAU KEMARIN SLOWRES TERUS😄😄</h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
